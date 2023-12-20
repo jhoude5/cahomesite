@@ -1,0 +1,102 @@
+.red-header {
+  max-width: none;
+  @media(min-width: $tablet-screen) {
+    background-color: #D83933;
+  }
+
+  .red-logo {
+    @media(min-width: $tablet-screen) {
+      display: none;
+    }
+  }
+
+  .white-logo {
+    display: none;
+    @media(min-width: $tablet-screen) {
+      display: block;
+    }
+  }
+
+  .red-header--header {
+    max-width: 1200px;
+    @media(min-width: $medium-large-screen) {
+      margin: 0 auto;
+    }
+
+    .bm-icon {
+      path {
+        @media(min-width: $tablet-screen) {
+          fill: $colors-white !important;
+        }
+
+      }
+    }
+
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+  }
+
+  .header-nav {
+    a,
+    span {
+      color: $colors-white;
+    }
+
+    .primary-button {
+      background-color: $colors-white;
+      color: $colors-black;
+    }
+  }
+}
+
+.red-header.scrolled {
+  position: sticky;
+  background-color: $colors-white;
+
+  .white-logo {
+    display: none;
+  }
+
+  .red-logo {
+    display: block;
+  }
+
+  .primary-button {
+    background-color: $colors-red-50;
+    color: $colors-white;
+
+    &:hover,
+    :focus {
+      background-color: $colors-red-60;
+    }
+  }
+
+  a,
+  span,
+  button {
+    color: $colors-black;
+  }
+}
+
+.red-rectangle {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(45deg, #D83933, #D83933);
+  transform: skewY(-5deg);
+  content: '';
+  height: 300px;
+  z-index: -1;
+  display: none;
+  @media(min-width: $tablet-screen) {
+    display: block;
+  }
+}

@@ -1,0 +1,100 @@
+.primary-page-cta {
+  color: $colors-white;
+  background: #2d2e2f;
+
+  .inner {
+    @include section-inner-padding;
+    padding: px-to-rem(48px) 0;
+    @media(min-width: $medium-large-screen) {
+      //margin: 0 auto;
+      padding: px-to-rem(80px) 48px;
+    }
+  }
+
+  h2 {
+    color: $colors-white;
+  }
+
+  .h3 {
+    margin-top: $small-spacing;
+    display: block;
+    font-size: 16px;
+  }
+
+  &__buttons {
+    margin-top: px-to-rem(32px);
+
+  }
+
+  .button {
+    display: block;
+    max-width: fit-content;
+    font-size: 18px;
+
+    &:last-child {
+      margin-top: $small-spacing;
+    }
+  }
+
+  //======= Tablet styles ======
+  @media screen and (min-width: $tablet-screen) {
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .h3 {
+      font-size: 24px;
+    }
+
+    .button {
+      display: inline-block;
+
+      &:last-child {
+        margin-top: 0;
+        margin-left: px-to-rem(32px);
+      }
+    }
+
+    &__buttons {
+      margin-top: px-to-rem(48px);
+    }
+  }
+
+  //========= Desktop styles ==========
+
+  @media screen and (min-width: $medium-large-screen) {
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    .h3 {
+      font-size: 28px;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 45%;
+    }
+
+    .button {
+      display: inline-block;
+
+      &:last-child {
+        margin-top: 0;
+        margin-left: px-to-rem(32px);
+      }
+    }
+  }
+
+
+}
+
