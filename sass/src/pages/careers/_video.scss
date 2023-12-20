@@ -1,0 +1,38 @@
+.careers--video-section {
+  width: 100%;
+  margin: 140px 0;
+
+  .inner {
+    position: relative;
+    max-width: $max-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .body {
+    max-width: 720px;
+    font-weight: 300;
+    margin: 24px 0 40px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+  }
+
+
+  @media screen and (max-width: $medium-large-screen) {
+    .inner {
+      align-items: flex-start;
+    }
+
+    body {
+      text-align: left;
+      max-width: none;
+    }
+  }
+}

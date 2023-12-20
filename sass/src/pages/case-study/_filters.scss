@@ -1,0 +1,72 @@
+.section--case-studies--filter {
+  padding: 40px 0 0;
+  @media(min-width: $tablet-screen) {
+    padding-top: 56px;
+    margin-bottom: 0;
+  }
+  @media(min-width: $medium-large-screen) {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 56px 0 0;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+    display: block;
+  }
+
+  .checkboxes {
+    .checkbox {
+      position: relative;
+      display: flex;
+      float: left;
+      padding-bottom: 32px;
+      padding-right: 56px;
+
+      input {
+        width: 21px;
+        height: 21px;
+        margin-right: 16px;
+        -webkit-appearance: none;
+        margin-top: 5px;
+        position: relative;
+        cursor: pointer;
+      }
+
+      input[type="checkbox"]::before {
+        position: relative;
+        display: block;
+        width: 21px;
+        height: 21px;
+        border: 1px solid #1B1B1B;
+        content: "";
+        background: #FFF;
+      }
+
+      input:checked::after {
+        position: relative;
+        display: block;
+        left: 1px;
+        top: -22px;
+        width: 21px;
+        height: 21px;
+        background-color: $colors-mint-cool-60v;
+        background-image: url("../files/icons/checkmark.svg");
+        content: "";
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      label {
+        padding-left: 6px;
+        padding-top: 4px;
+        @media(min-width: $tablet-screen) {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

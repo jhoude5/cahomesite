@@ -1,0 +1,54 @@
+
+.pages {
+  padding: 0;
+
+  ul,
+  li {
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .page-bundle {
+    padding: 24px 0;
+    margin: 0;
+    border-bottom: 1px solid #c4c4c4;
+
+    span {
+      @extend %h2;
+    }
+
+    a {
+      text-decoration: none;
+      color: $colors-grey-90;
+    }
+
+    li {
+      @extend %h3;
+      padding-top: 32px;
+      font-weight: 300;
+      display: none;
+    }
+  }
+
+  .heading {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $colors-grey-90;
+
+    &::after {
+      background-image: url('../files/icons/ios-arrow-icon.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,42 @@
+.privacy__content-section {
+  width: 100%;
+  color: $colors-grey-90;
+
+  .inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    @media(min-width: $medium-large-screen) {
+      width: 720px;
+    }
+  }
+  h3,
+  h4 {
+    text-align: left;
+    width: 100%;
+    padding-top: 24px;
+    @media(min-width: $tablet-screen) {
+      padding-top: 48px;
+    }
+    @media(min-width: $large-screen) {
+      padding-top: 64px;
+    }
+  }
+
+  .body {
+    text-align: left;
+    width: 100%;
+    font-weight: 300;
+    padding: 24px 0 0;
+
+  }
+
+  ul {
+    margin: 0;
+  }
+
+
+}

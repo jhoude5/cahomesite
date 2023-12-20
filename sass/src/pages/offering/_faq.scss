@@ -1,0 +1,65 @@
+.section--offering--faqs {
+  margin-bottom: 40px;
+  @media(min-width: $tablet-screen) {
+    margin-bottom: 64px;
+  }
+  @media(min-width: $large-screen) {
+    margin-bottom: 40px;
+  }
+  .inner {
+    @media(min-width: 845px) {
+      max-width: 845px;
+      padding: 40px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      @media(min-width: $medium-large-screen) {
+        margin-bottom: 40px;
+      }
+
+    }
+    .accordion {
+      .accordion__button {
+        display: flex;
+      }
+      .accordion__item {
+        margin-bottom: 16px;
+        @media(min-width: $medium-large-screen) {
+          margin-bottom: 40px;
+        }
+        .body {
+          margin-left: 36px;
+        }
+      }
+
+      .accordion__button[aria-expanded='true'] .arrow-right {
+        display: none;
+      }
+      .accordion__button[aria-expanded='true'] .arrow-down {
+        display: block;
+      }
+    }
+  }
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid $colors-grey-90;
+  display: none;
+  margin-right: 16px;
+  margin-top: 8px;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid $colors-grey-90;
+  margin-right: 16px;
+  margin-top: 5px;
+}

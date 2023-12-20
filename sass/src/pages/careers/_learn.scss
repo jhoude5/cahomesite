@@ -1,0 +1,23 @@
+.home--learn-w-us-section {
+  margin-bottom: 0;
+  padding-bottom: 64px;
+  @media(min-width: $medium-large-screen) {
+    padding-bottom: 0;
+    margin-bottom: 60px;
+  }
+
+  .grey-background {
+    background-color: $colors-grey-warm-4;
+    position: absolute;
+    width: 100%;
+
+
+    @media(min-width: $tablet-screen) {
+      width: 70%;
+      height: 100%;
+    }
+    @media(min-width: $medium-large-screen) {
+      height: 577px;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.section--case-study--challenge-to-tools {
+  padding: 56px 0 32px;
+  @media(min-width: $tablet-screen) {
+    padding: 56px 0;
+  }
+  @media(min-width: $medium-large-screen) {
+    padding: 72px;
+  }
+
+  margin-bottom: 0;
+
+  .inner {
+    .case-study-challenge-goal {
+      max-width: 720px;
+      margin: 0 auto;
+
+      h2 {
+        padding-bottom: 24px;
+      }
+
+      .challenge,
+      .goal {
+        padding-bottom: 56px;
+        @media(min-width: $medium-large-screen) {
+          padding-bottom: 64px;
+        }
+
+        ul {
+          margin-bottom: 0;
+        }
+        .body img {
+          width: 100%;
+        }
+      }
+
+      .goal {
+        .body {
+          margin-top: 24px;
+
+        }
+      }
+    }
+
+    .case-study--expertise-tools {
+      @media (min-width: $medium-large-screen) {
+        display: flex;
+      }
+
+      .expertise,
+      .tools {
+        background-color: #F5F5F0;
+        padding: 32px 24px;
+        overflow: hidden;
+        @media(min-width: $tablet-screen) {
+          padding: 48px 0;
+          width: 100%;
+        }
+        @media(min-width: $large-screen) {
+          padding: 48px 82px;
+
+        }
+
+        ul {
+          margin-bottom: 0;
+        }
+
+        h3 {
+          font-size: 24px;
+          @media(min-width: $tablet-screen) {
+            font-size: 28px;
+            padding-left: 48px;
+          }
+          @media (min-width: $medium-large-screen) {
+            padding-left: 0;
+          }
+        }
+
+        .body {
+
+          @media(min-width: $tablet-screen) {
+            padding-left: 48px;
+          }
+          @media (min-width: $medium-large-screen) {
+            padding-left: 0;
+          }
+        }
+      }
+
+      .tools {
+        @media (min-width: $medium-large-screen) {
+          margin-left: 24px;
+        }
+      }
+
+      .expertise {
+        margin-bottom: 16px;
+        @media (min-width: $tablet-screen) {
+          margin-bottom: 32px;
+        }
+        @media (min-width: $medium-large-screen) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

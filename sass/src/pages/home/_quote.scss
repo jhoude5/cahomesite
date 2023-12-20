@@ -1,0 +1,78 @@
+.home--quote-section {
+  color: $colors-grey-90;
+  margin: 0;
+  padding-top: 48px;
+  @media(min-width: $tablet-screen) {
+    padding-top: 64px;
+  }
+  @media(min-width: $medium-large-screen) {
+    padding-top: 120px;
+  }
+
+  .inner {
+    max-width: 750px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    margin-right: 32px;
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 12px;
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+
+    h2 {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 300;
+      font-family: $secondary-font;
+      padding-bottom: 24px;
+      @media(min-width: $tablet-screen) {
+        font-size: 24px;
+        line-height: 33px;
+      }
+      @media(min-width: 1026px) {
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+
+    .body {
+      padding-bottom: 8px;
+      font-weight: 300;
+    }
+  }
+
+  @media screen and (max-width: $large-screen) {
+    img {
+      margin-right: 16px;
+      margin-top: 6px;
+    }
+  }
+
+  // Override the heading style, but just for large screens.
+  @media screen and (min-width: $large-screen) {
+    h2 {
+      font-size: 28px;
+      line-height: 39px;
+    }
+
+  }
+  @media screen and (max-width: $medium-screen) {
+
+
+    img {
+      width: 25px;
+    }
+  }
+}
